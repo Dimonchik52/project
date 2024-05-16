@@ -1,0 +1,538 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-weight: 400 700;
+	font-family: 'AudiType';
+	font-style: normal;
+	font-stretch: 100% 130%;
+	src: url(https://assets.audi.com/audi-fonts/1/AudiTypeVF.woff2)
+		format('woff2-variations');
+	font-display: swap;
+}
+
+html {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'AudiType';
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #333;
+	color: #fff;
+	padding: 1.25rem;
+
+	& > h1 {
+		padding-bottom: 1.25rem;
+	}
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	gap: 1.875rem;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 1.25rem;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	padding: 1.25rem;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1.25rem 1.875rem;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 2.5rem;
+}
+
+.audi > img {
+	padding-bottom: 2.5rem;
+	width: 100%;
+	height: auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+}
+
+.image-container > img {
+	max-width: 100%;
+}
+
+.main {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	/* Прозрачный черный фон */
+	color: #000000;
+	/* Белый цвет текста */
+	padding: 0.625rem;
+	font-size: 2rem;
+
+	& p {
+		text-align: center;
+	}
+}
+
+.audi {
+	position: relative;
+	display: inline-block;
+	/* Позволяет контейнеру иметь размеры, соответствующие его содержимому */
+}
+
+.textonphoto {
+	position: absolute;
+	top: 88%;
+	/* Располагаем текст по вертикали посередине контейнера */
+	left: 5%;
+	/* Располагаем текст по горизонтали посередине контейнера */
+	transform: translate(-30%, -60%);
+	/* Корректируем положение текста относительно его размеров */
+	/* Прозрачный белый фон */
+	padding: 0.625rem;
+	/* Отступы вокруг текста */
+	color: rgb(255, 255, 255);
+	width: 6.25rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	white-space: nowrap;
+}
+
+.audi-rs7-desc img {
+	padding-bottom: 2.5rem;
+	width: 100%;
+	height: auto;
+}
+
+.audi-rs7-desc {
+	margin-bottom: 1.875rem;
+
+	& h2 {
+		margin-left: 9.375rem;
+		font-size: 2.5rem;
+		line-height: 5rem;
+	}
+
+	& p {
+		width: 56.25rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-left: 9.375rem;
+	}
+}
+
+.audi-rs7-desc1 img {
+	padding-bottom: 2.5rem;
+	width: 100%;
+	height: auto;
+}
+
+.audi-rs7-desc1 {
+	margin-bottom: 1.875rem;
+	margin-top: 3.125rem;
+
+	& h2 {
+		margin-left: 11.875rem;
+		font-size: 2rem;
+		line-height: 3rem;
+		width: 40.625rem;
+		font-size: 2.5rem;
+	}
+
+	& p {
+		width: 46.875rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-left: 11.875rem;
+		margin-top: 1.875rem;
+	}
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-70%, -80%);
+	background-color: rgb(255, 255, 255);
+	/* Прозрачный белый фон */
+	color: black;
+	padding: 0.625rem;
+	font-family: Arial, sans-serif;
+	/* Шрифт текста */
+	font-size: 1.25rem;
+	/* Размер текста */
+	margin-left: 3.125rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	width: 46.875rem;
+	& p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-top: 1.25rem;
+	}
+	& h1 {
+		font-size: 3rem;
+		line-height: 4rem;
+		width: 56.25rem;
+		text-align: left;
+	}
+}
+
+.audi-rs7-desc4 img {
+	padding-bottom: 2.5rem;
+	width: 75%;
+	height: auto;
+}
+
+.audi-rs7-desc4 {
+	margin-bottom: 1.875rem;
+
+	& h2 {
+		margin-left: 11.875rem;
+		font-size: 2.5rem;
+		line-height: 5rem;
+	}
+
+	& p {
+		width: 37.5rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-left: 11.875rem;
+	}
+}
+
+.audi-q5-desc5 img {
+	float: left;
+	margin-top: 3.125rem;
+	width: 62.5rem;
+}
+
+.audi-q5-desc5 {
+	margin-top: 6.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	background-color: #000000;
+	& h2 {
+		margin-bottom: 1.25rem;
+		font-size: 2.813rem;
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+		color: #fff;
+	}
+	& p {
+		margin-top: 1.25rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		width: 370px;
+		color: #fff;
+	}
+}
+
+.audi-q5-desc6 video {
+	width: 37.5rem;
+	order: 1;
+	margin-top: 6.25rem;
+}
+
+.audi-q5-desc6 {
+	margin-top: 6.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	max-width: 100%;
+	gap: 6.25rem;
+	/* Увеличил ширину контейнера, чтобы уместить изображение и текст */
+	font-size: 1rem;
+	line-height: 1.4rem;
+
+	& h2 {
+		font-size: 2.813rem;
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+		width: 31.25rem;
+	}
+
+	& p {
+		width: 25rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin: 0;
+	}
+
+	& .audi-q5-desc6-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+}
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.875rem;
+	& h2 {
+		font-size: 2.813rem;
+		font-size: 3.5rem;
+		line-height: 4rem;
+		width: 56.25rem;
+		text-align: center;
+	}
+	& p {
+		width: 62.5rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		text-align: center;
+		width: 56.25rem;
+	}
+}
+
+.image-container4 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 7.5rem;
+	height: 93.75rem;
+	background-image: url(./IMG/A4\(4\).jpg);
+	background-repeat: no-repeat;
+	& img {
+		width: 100%;
+	}
+}
+
+.text-overlay4 {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-70%, -800%);
+	background-color: rgb(255, 255, 255);
+	/* Прозрачный белый фон */
+	color: black;
+	padding: 0.625rem;
+	font-family: Arial, sans-serif;
+	/* Шрифт текста */
+	font-size: 1.25rem;
+	/* Размер текста */
+	margin-left: 3.125rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	& p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-top: 1.25rem;
+	}
+	& h1 {
+		font-size: 2.813rem;
+		font-size: 3rem;
+		line-height: 4rem;
+		width: 56.25rem;
+		text-align: center;
+	}
+}
+
+.audi-rs7-cards {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 11.25rem;
+	margin-top: 9.375rem;
+}
+
+.audi-rs7-desc5 img {
+	width: 31.25rem;
+}
+
+.audi-rs7-desc5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 9.375rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+
+	& h2 {
+		font-size: 2.813rem;
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+	}
+	& p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin: 0;
+	}
+	& .audi-rs7-desc5-container {
+		display: flex;
+		width: 25rem;
+		flex-direction: column;
+		gap: 1.875rem;
+	}
+}
+
+.audi-rs7-desc6 img {
+	width: 37.5rem;
+}
+
+.audi-rs7-desc6 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: 3.125rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+
+	& .audi-rs7-desc6-container-title {
+		font-size: 2.813rem;
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+	}
+
+	& .audi-rs7-desc6-text {
+		width: 25rem;
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+	& .audi-rs7-desc6-container {
+		width: 25rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.875rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.textonphoto {
+		display: none;
+	}
+}
+
+/* Для телефона */
+@media screen and (max-width: 768px) {
+    .textonphoto h1 {
+        top: 60% !important;
+        width: 200px !important;
+        height: 100px;
+    }
+    img {
+        width: 100% !important;
+    }
+	.audi-rs7-desc,
+    .audi-rs7-cards,
+	.audi-rs7-desc1,
+	.audi-rs7-desc4,
+	.audi-q5-desc5,
+    .audi-rs7-desc6,
+    .audi-rs7-desc5,
+	.audi-q5-desc6 {
+		flex-direction: column !important; /* Меняем направление флексбокса на вертикальное */
+		align-items: center; /* Выравниваем элементы по центру */
+		margin-left: 0 !important; /* Убираем отступ слева */
+		width: 100% !important; /* Ширина на всю доступную ширину */
+	}
+
+	.audi-rs7-desc h2,
+    .text-overlay h1,
+    .text-overlay p,
+	.audi-rs7-desc1 h2,
+	.audi-rs7-desc4 h2,
+	.audi-q5-desc5 h2,
+	.audi-q5-desc6 h2,
+	.audi-rs7-desc p,
+	.audi-rs7-desc1 p,
+	.audi-rs7-desc4 p,
+	.audi-q5-desc5 p,
+	.audi-q5-desc6 p,
+    .audi-rs7-desc5-container,
+    .audi-rs7-desc6-container,
+    .audi-rs7-desc6-container p,
+    .audi-rs7-desc6-container h2 {
+		margin-left: 0 !important; /* Убираем отступ слева */
+		text-align: center !important; /* Выравниваем текст по центру */
+		width: inherit !important; /* Ширина на всю доступную ширину */
+        max-width: 100% !important;
+	}
+
+	.audi-rs7-desc h2,
+    .text-overlay h1,
+    .text-overlay p,
+	.audi-rs7-desc1 h2,
+	.audi-rs7-desc4 h2,
+	.audi-q5-desc5 h2,
+	.audi-q5-desc6 h2,
+	.audi-rs7-desc6-container h2 {
+		font-size: 2rem !important;
+	}
+
+    .text-overlay4,
+    .text-overlay,
+    .image-container4 {
+        display: none;
+    }
+
+	.audi-rs7-desc img,
+	.audi-rs7-desc1 img,
+	.audi-rs7-desc4 img,
+	.audi-q5-desc5 img,
+	.audi-q5-desc6 video {
+		width: 100% !important; /* Ширина картинок на всю ширину экрана */
+	}
+    .main-container h2 {
+        font-size: 28px !important;
+        width: 100% !important;
+    }
+}
+
+/* Для планшета */
+@media screen and (max-width: 1024px) {
+	.main-container p {
+		width: 80% !important; /* Уменьшаем ширину текста для лучшей читаемости */
+	}
+}
